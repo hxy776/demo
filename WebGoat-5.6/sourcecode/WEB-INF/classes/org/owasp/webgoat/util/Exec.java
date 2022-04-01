@@ -283,36 +283,7 @@ public class Exec
 		boolean lazyQuit = false;
 		ThreadWatcher watcher;
 
-		try
-		{
-			// start the command
-			child = Runtime.getRuntime().exec(command);
 
-			// get the streams in and out of the command
-			InputStream processIn = child.getInputStream();
-			InputStream processError = child.getErrorStream();
-			OutputStream processOut = child.getOutputStream();
-
-			// start the clock running
-			if (timeout > 0)
-			{
-				watcher = new ThreadWatcher(child, interrupted, timeout);
-				new Thread(watcher).start();
-			}
-
-			// Write to the child process' input stream
-			if ((input != null) && !input.equals(""))
-			{
-				try
-				{
-					processOut.write(input.getBytes());
-					processOut.flush();
-					processOut.close();
-				} catch (IOException e1)
-				{
-					results.setThrowable(e1);
-				}
-			}
 
 			// Read from the child process' output stream
 			// The process may get killed by the watcher at any time
@@ -439,10 +410,7 @@ public class Exec
 	 *            Description of the Parameter
 	 * @return Description of the Return Value
 	 */
-	public static ExecResults execSimple(String[] command)
-	{
-		return (execOptions(command, "", 0, 0, false));
-	}
+
 
 	/**
 	 * Description of the Method
@@ -465,10 +433,7 @@ public class Exec
 	 *            Description of the Parameter
 	 * @return Description of the Return Value
 	 */
-	public static ExecResults execSimple(String command, String args)
-	{
-		return (execOptions(command, args, 0, 0, false));
-	}
+	
 
 	/**
 	 * Description of the Method

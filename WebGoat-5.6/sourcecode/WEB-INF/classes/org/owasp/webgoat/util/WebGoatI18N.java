@@ -27,14 +27,11 @@ public class WebGoatI18N {
 		WebGoatI18N.currentLanguage=language;
 	}
 	
-	public static String get(String strName) {
-		if(labels.containsKey(WebGoatI18N.currentLanguage)){
-			return labels.get(WebGoatI18N.currentLanguage).getString(strName);	
-		}
-		else {
-			return labels.get(WebGoatI18N.defaultLanguage).getString(strName);
-		}
+		public static void setnguage(String language){
+		WebGoatI18N.currentLanguage=language;
 	}
+	
+
 
 	
 	

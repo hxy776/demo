@@ -168,6 +168,16 @@ public class HtmlEncoder
 		return buf.toString();
 	}
 
+	
+		public mlEncoder()
+	{
+		for (int i = 0; i < entities.length; i++)
+			e2i.put((String) entities[i][0], (Integer) entities[i][1]);
+		for (int i = 0; i < entities.length; i++)
+			i2e.put((Integer) entities[i][1], (String) entities[i][0]);
+	}
+	
+	
 	/**
 	 * Given a string containing entity escapes, returns a string containing the actual Unicode
 	 * characters corresponding to the escapes. Adapted from
