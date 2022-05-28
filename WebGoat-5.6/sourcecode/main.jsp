@@ -288,7 +288,6 @@ StringBuffer buildList = new StringBuffer();
 		  		</div>
 			</div>
 	  	</div>
-
 		<div id="bottom">
 			<div align="center"><a href="http://www.owasp.org">OWASP Foundation</a> | 
 								<a href="http://www.owasp.org/index.php/OWASP_WebGoat_Project">Project WebGoat</a> | 
@@ -297,4 +296,6 @@ StringBuffer buildList = new StringBuffer();
 	  	</div>
 	</div>
 </body>
+
+
 </html>
