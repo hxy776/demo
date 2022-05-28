@@ -55,7 +55,6 @@ public class Interceptor implements Filter
 
 	private static final String OSG_SERVER_NAME = "OSGServerName";
 
-	private static final String OSG_SERVER_PORT = "OSGServerPort";
 
 	/*
 	 * (non-Javadoc)
