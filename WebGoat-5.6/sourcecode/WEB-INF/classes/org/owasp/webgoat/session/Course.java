@@ -61,7 +61,7 @@ public class Course
 
 	private WebgoatContext webgoatContext;
 
-	
+	private WebgoatContext webgoatContext1;
 	public Course()
 	{
 		try

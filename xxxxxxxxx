@@ -1,0 +1,25 @@
+[33mcommit 3bc829cf41a668b97e0f9bb9de42da9058a26212[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: hxy776 <hxy2805@163.com>
+Date:   Sat May 28 16:49:38 2022 +0800
+
+    修改文件
+
+[1mdiff --git a/WebGoat-5.6/sourcecode/main.jsp b/WebGoat-5.6/sourcecode/main.jsp[m
+[1mindex ac5126f..607656a 100644[m
+[1m--- a/WebGoat-5.6/sourcecode/main.jsp[m
+[1m+++ b/WebGoat-5.6/sourcecode/main.jsp[m
+[36m@@ -288,7 +288,6 @@[m [mStringBuffer buildList = new StringBuffer();[m
+ 		  		</div>[m
+ 			</div>[m
+ 	  	</div>[m
+[31m-[m
+ 		<div id="bottom">[m
+ 			<div align="center"><a href="http://www.owasp.org">OWASP Foundation</a> | [m
+ 								<a href="http://www.owasp.org/index.php/OWASP_WebGoat_Project">Project WebGoat</a> | [m
+[36m@@ -297,4 +296,6 @@[m [mStringBuffer buildList = new StringBuffer();[m
+ 	  	</div>[m
+ 	</div>[m
+ </body>[m
+[32m+[m
+[32m+[m
+ </html>[m

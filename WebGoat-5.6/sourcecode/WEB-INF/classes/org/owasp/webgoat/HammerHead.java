@@ -83,10 +83,7 @@ public class HammerHead extends HttpServlet
 	 */
 	public static String propertiesPath = null;
 
-	/**
-	 * provides convenience methods for getting setup information from the ServletContext
-	 */
-	private WebgoatContext webgoatContext = null;
+	
 
 	/**
 	 * Description of the Method
