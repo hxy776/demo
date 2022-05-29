@@ -84,7 +84,7 @@ BEGIN
 END;
 /
 
-CREATE OR REPLACE PROCEDURE WEBGOAT_guest.UPDATE_EMPLOYEE_BACKUP(
+CREATE PROCEDURE WEBGOAT_guest.UPDATE_EMPLOYEE_BACKUP(
     v_userid IN employee.userid%type, 
     v_first_name IN employee.first_name%type, 
     v_last_name IN employee.last_name%type, 
