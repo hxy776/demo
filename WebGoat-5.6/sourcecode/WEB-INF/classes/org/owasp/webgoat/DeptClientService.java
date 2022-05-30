@@ -12,6 +12,8 @@ import com.atguigu.springcloud.entities.Dept;
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")
 public interface DeptClientService
 {
+	
+  int a = 0;
   @RequestMapping(value = "/dept/get/{id}",method = RequestMethod.GET)
   public Dept get(@PathVariable("id") long id);
  
@@ -20,5 +22,6 @@ public interface DeptClientService
  
   @RequestMapping(value = "/dept/add",method = RequestMethod.POST)
   public boolean add(Dept dept);
+  
 }
  

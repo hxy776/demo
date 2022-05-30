@@ -14,7 +14,7 @@ WebSession webSession = ((WebSession)session.getAttribute("websession"));
 <link href="css/webgoat.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div id=#wrap>
+	<div id=#wrap style="">
 	<%
 			String source = webSession.getSource();
 			if (source != null)
@@ -25,4 +25,5 @@ WebSession webSession = ((WebSession)session.getAttribute("websession"));
 	%>
 	</div>
 </body>
+
 </html>
